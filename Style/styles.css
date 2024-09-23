@@ -183,7 +183,13 @@ span{
     margin: 2rem 0 3 rem;
 
 }
-
+.services-box img {
+    width: 7rem;  /* Same size as the icon */
+    height: 7rem;
+    /* object-fit: contain; */
+    filter: invert(49%) sepia(43%) saturate(5307%) hue-rotate(179deg) brightness(90%) contrast(93%);
+    /*margin-bottom: .9rem;  Ensure consistent spacing */
+}
 .services h2{
     margin-bottom: 5rem;
     
@@ -432,6 +438,25 @@ span{
         display: block;
 
     }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0,0,0,.2);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+    
+
+
     .home{
         flex-direction: column;
     }
@@ -499,5 +524,5 @@ span{
     .contact form .input-box input {
         width: 100%;
     }
-    
+
 }
