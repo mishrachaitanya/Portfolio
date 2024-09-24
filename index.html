@@ -30,7 +30,7 @@
         <div class="home-content">
             <h3>Hi, Myself </h3>
                 <h1>Chaitanya Mishra</h1>
-                <h3>And I'm a <span>Developer</span></h3>
+                <h3>And I'm a <span class="multiple-text">Data Scientist</span></h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quo necessitatibus. Illum similique, saepe voluptatem distinctio omnis natus ex aut odio! Praesentium nihil ipsam est!</p>
                 <div class="social-media">
                     <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -38,7 +38,8 @@
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
-            <a href="#" class="btn">Download CV</a>
+                <a href="files\Resume_ChaitanyaMishra.pdf" class="btn" download="Resume_ChaitanyaMishra.pdf">Download CV</a>
+                
 
         </div>
         <div class="home-img">
@@ -161,16 +162,16 @@
 
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
-        <form action="#">
+        <form  action="https://formspree.io/f/mgvwjdgg"  method="POST">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
+                <input type="text" name="Name" placeholder="Full Name">
+                <input type="email" name="email" placeholder="Email Address">
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
+                <input type="number" name="Mobile" placeholder="Mobile Number">
+                <input type="text" name="Subject" placeholder="Email Subject">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" name="Content"></textarea>
             <input type="submit" value="Send Message" class="btn">
         </form>
     </section>
@@ -186,10 +187,14 @@
         </div>
     </footer>
 
+
+<!--Scroll Reveal JS-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+<!--TypedJS-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
 <!--MAIN js-->
-
-
-    <script src="JS/main.jss"></script>
-    
+    <script src="JS\main.js"></script>
 </body>
 </html>
