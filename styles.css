@@ -184,14 +184,26 @@ span{
 
 }
 
-.collapsed {
-    display: none;
+
+/* Ensure smooth transitions */
+#extraText {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out; /* Smooth expand/collapse */
 }
 
+#extraText.expanded {
+    max-height: 500px; /* Adjust based on your content's height */
+}
+
+/* Adjust the button appearance */
 #toggleButton {
     cursor: pointer;
     margin-top: 10px;
 }
+
+
+/* After */
 .services-box img {
     width: 7rem;  /* Same size as the icon */
     height: 7rem;
