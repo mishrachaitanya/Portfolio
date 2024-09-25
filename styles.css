@@ -183,6 +183,15 @@ span{
     margin: 2rem 0 3 rem;
 
 }
+
+.collapsed {
+    display: none;
+}
+
+#toggleButton {
+    cursor: pointer;
+    margin-top: 10px;
+}
 .services-box img {
     width: 7rem;  /* Same size as the icon */
     height: 7rem;

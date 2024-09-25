@@ -60,3 +60,14 @@ const typed = new Typed('.multiple-text',{
     // backDelay:
 })
 
+document.getElementById("toggleButton").onclick = function(event) {
+    event.preventDefault(); // Prevent the default action of the anchor tag
+    var extraText = document.getElementById("extraText");
+    if (extraText.classList.contains("collapsed")) {
+        extraText.classList.remove("collapsed");
+        this.textContent = "Read Less";
+    } else {
+        extraText.classList.add("collapsed");
+        this.textContent = "Read More";
+    }
+};
