@@ -12,7 +12,7 @@
 <body>
     <!--header design-->
     <header class="header">
-        <a href="https://mishrachaitanya.github.io/Portfolio/" class="logo">Portfolio</a>
+        <a href="#" class="logo">Portfolio</a>
 
         <i class="fa-solid fa-bars" id="menu-icon"></i>
 
@@ -20,7 +20,7 @@
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
+            <a href="#portfolio">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -31,17 +31,17 @@
             <h3>Hi, Myself </h3>
                 <h1>Chaitanya Mishra</h1>
                 <h3>And I'm a <span class="multiple-text">Data Scientist</span></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quo necessitatibus. Illum similique, saepe voluptatem distinctio omnis natus ex aut odio! Praesentium nihil ipsam est!</p>
+                <p>I’m passionate about leveraging technology to create innovative solutions.
+                   Explore my projects and services,<br> and let’s connect to bring your ideas to life!</p>
                 <div class="social-media">
+                    <a href="https://github.com/mishrachaitanya/"><i class="fa-brands fa-github"></i></a>    
                     <a href="#"><i class="fa-brands fa-linkedin"></i></a> 
-                    <a href="https://github.com/mishrachaitanya/"></a><i class="fa-brands fa-github"></i></a>    
                     <a href="https://www.facebook.com/chaitanyamishra97"><i class="fa-brands fa-facebook"></i></a>
                     <a href="https://x.com/chaitanyamishra"><i class="fa-brands fa-x-twitter"></i></a>
                     <a href="https://www.instagram.com/chaitanyamishra_97/"><i class="fa-brands fa-instagram"></i></a>
-                    
-
+                  
                 </div>
-                <a href="files\Resume_ChaitanyaMishra.pdf" class="btn" download="Resume_ChaitanyaMishra.pdf">Download CV</a>
+                <a href="files\Resume_ChaitanyaMishra_.pdf" class="btn" download="Resume_ChaitanyaMishra.pdf">Download CV</a>
                 
 
         </div>
@@ -51,20 +51,34 @@
     </section>
 
 <!--About Section Design-->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="img/aboutme.jpg" alt="">
-        </div>
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="img/aboutme.jpg" alt="">
+    </div>
 
-        <div class="about-content">
-            <h2 class="heading">ABOUT <span>Me</span></h2>
-            <h3>Web Developer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure unde asperiores aliquid assumenda eos ut architecto sit. Est id quia, explicabo quo optio enim blanditiis.</p>
-            <a href="#" class="btn">Read More</a>
+    <div class="about-content">
+        <h2 class="heading">ABOUT <span>Me</span></h2>
+
+        <p>
+            I am Chaitanya Mishra, a passionate web developer and data scientist with a strong foundation in programming and machine learning. My academic journey includes completing various courses in programming, data science, and software engineering, where I have developed a keen interest in harnessing technology to solve real-world problems.
+        </p>
+
+        <p id="extraText" class="collapsed">
+            I hold a BSc degree and have successfully completed courses such as Database Management Systems, Business Analytics, and Machine Learning Techniques, achieving notable grades along the way. My current focus is on expanding my expertise in deep learning and computer systems design.
+            
+            In addition to my formal education, I have earned certifications in Django, Azure Fundamentals, SQL, and Tableau, among others. I am particularly proud of receiving a certificate of appreciation for my performance in a machine learning project where I secured 2nd place out of 998 participants on Kaggle.
+            
+            As I continue to explore the intersection of data science and web development, I am eager to take on new challenges that allow me to apply my skills in real-world scenarios. My goal is to contribute to innovative projects that leverage data-driven insights to drive success.
+
+            Feel free to connect with me if you’re looking for collaboration in web development or data science!
+        </p>
+
+        <a href="#" id="toggleButton" class="btn">Read More</a>
+    </div>
+</section>
 
 
-        </div>
-    </section>
+
 
 <!--Services Section Design-->
     <section class="services" id="services">  
@@ -126,8 +140,8 @@
             <div class="portfolio-box">
                 <img src="img/1.jpg" alt="">
                 <div class="portfolio-layer">
-                    <h4>Web App Development</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. nostrum libero perspiciatis ea.</p>
+                    <h4>IndicTTS Deepfake Challenge</h4>
+                    <p>Developed a deep learning model to detect AI-generated speech across 16 Indian languages. Evaluated using ROC-AUC on a private leaderboard—focused on real-world TTS deepfake detection and speech authentication. 🔊</p>
                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
                 </div>
             </div>
@@ -156,8 +170,8 @@
             <div class="portfolio-box">
                     <img src="img/1.jpg" alt="">
                     <div class="portfolio-layer">
-                        <h4>Web App Development</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. nostrum libero perspiciatis ea.</p>
+                        <h4>Multi-Lingual Sentiment Analysis</h4>
+                        <p>Fine-tuned LLaMA 3.1-8B-Instruct to master 13 Indian languages. Built a robust sentiment classifier using LoRA fine-tuning techniques—evaluated by F1 Score on Kaggle with strict constraints. 🚀</p>
                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     </div>
             </div>
@@ -184,14 +198,14 @@
         <h2 class="heading">Contact <span>Me</span></h2>
         <form  action="https://formspree.io/f/mgvwjdgg"  method="POST">
             <div class="input-box">
-                <input type="text" name="Name" placeholder="Full Name">
-                <input type="email" name="email" placeholder="Email Address">
+                <input type="text" name="Name" placeholder="Full Name"  >
+                <input type="email" name="email" placeholder="Email Address" required>
             </div>
             <div class="input-box">
                 <input type="number" name="Mobile" placeholder="Mobile Number">
-                <input type="text" name="Subject" placeholder="Email Subject">
+                <input type="text" name="Subject" placeholder="Email Subject" required >
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" name="Content"></textarea>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" name="Content" ></textarea>
             <input type="submit" value="Send Message" class="btn">
         </form>
     </section>
@@ -199,7 +213,7 @@
 <!--Footer Section Design-->
     <footer class="footer">
         <div class="s">
-            <p> Copyright &copy; 2024 by @mishrachaitanya | All Right Reserved.</p>
+            <p> Copyright &copy; 2025 by @mishrachaitanya | All Right Reserved.</p>
         </div>
 
         <div class="footer-iconTop">
@@ -218,5 +232,3 @@
     <script src="JS\main.js"></script>
 </body>
 </html>
-
-
